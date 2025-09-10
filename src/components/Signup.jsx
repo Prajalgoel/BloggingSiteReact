@@ -32,34 +32,37 @@ function Signup() {
     }
 
     return (
-        <div className='flex items-center justify-center'>
-            <div className={`mx-auto w-full max-w-lg bg-gray-100 rounded-xl p-10 border border-black/10`}>
-                <div className="mb-2 flex justify-center">
+        <div className='flex items-center justify-center py-12'>
+            <div className={`mx-auto w-full max-w-lg bg-white/80 backdrop-blur-md rounded-2xl p-8 border border-white/20 shadow-2xl`}>
+                <div className="mb-6 flex justify-center">
                     <span className="inline-block w-full max-w-[100px]">
                         <Logo width="100%" />
                     </span>
                 </div>
 
-                <h2 className="text-center text-2xl font-bold leading-tight">Sign up to create account</h2>
+                <div className="text-center mb-8">
+                    <h2 className="text-3xl font-bold text-gray-900 mb-2">Create Account</h2>
+                    <p className='text-gray-600'>
+                        Already have an account?&nbsp;
+                        <Link 
+                        to= "/login"
+                        className='font-semibold text-indigo-600 hover:text-indigo-700 transition-colors duration-200'
+                        >
+                            Sign In
+                        </Link>
+                    </p>
+                </div>
 
-                <p className='mt-2 text-center text-base text-black/60'>
-                    Already have an account?&nbsp;
-                    
-                    <Link 
-                    to= "/login"
-                    className=''
-                    >
-                        Sign In
-                    </Link>
-                </p>
+                {error && (
+                    <div className='bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg mb-6 text-center'>
+                        {error}
+                    </div>
+                )}
 
-                {error && <p className='text-red-600 mt-8 text-center'>{error}</p>}
-
-                <form onSubmit={handleSubmit(signUp)} >
-                    <div className='space-y-5'>
+                <form onSubmit={handleSubmit(signUp)} className='space-y-6'>
                         <Input
-                        label = "Full Name : "
-                        placeholder = "Enter Your Full Name"
+                        label = "Full Name"
+                        placeholder = "Enter your full name"
                         {...register("name", {
                             required : true,
 
@@ -68,8 +71,8 @@ function Signup() {
 
                         <Input 
                         type = "email"
-                        label = "Email : "
-                        placeholder = "Enter Your Email"
+                        label = "Email Address"
+                        placeholder = "Enter your email"
                         {...register("email",{
                             required : true,
                             validate : {matchPattern:
@@ -79,8 +82,8 @@ function Signup() {
                         />
 
                         <Input
-                        label = "Password : "
-                        placeholder = "Enter Password"
+                        label = "Password"
+                        placeholder = "Create a strong password"
                         type = "password"
                         {...register("password", {
                             required : true
@@ -90,11 +93,15 @@ function Signup() {
                         <Button
                         children= "Create Account"
                         type='submit'
-                        className='w-full'
+                        className='w-full text-lg font-semibold'
                         />
-                    </div>
                 </form>
 
+                <div className="mt-6 text-center">
+                    <p className="text-sm text-gray-500">
+                        By creating an account, you agree to our Terms of Service and Privacy Policy
+                    </p>
+                </div>
             </div>
         </div>
     )

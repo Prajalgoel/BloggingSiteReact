@@ -24,17 +24,20 @@ function App() {
   }, [])
 
   return !loading ? (
-    <div className='min-h-screen flex flex-wrap content-between bg-gray-400'>
+    <div className='min-h-screen flex flex-wrap content-between bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100'>
       <div className='w-full block'>
         <Header />
-        <main>
+        <main className='flex-grow'>
           <Outlet />
         </main>
         <Footer />
       </div>
     </div>
-  ) : 
-  null
+  ) : (
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100">
+      <div className="animate-spin rounded-full h-16 w-16 border-b-2 border-indigo-600"></div>
+    </div>
+  )
   
 }
 

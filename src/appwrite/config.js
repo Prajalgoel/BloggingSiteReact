@@ -120,18 +120,13 @@ export class Service {
     }
 
     getFilePreview(fileId) {
-        console.log("getFilePreview called with fileId:", fileId);
+        if (!fileId) return null;
+        
         try {
-            const previewUrl = this.bucket.getFilePreview(
+            return this.bucket.getFileView(
                 conf.appwriteBucketId,
-                fileId,
-                300, // width
-                300, // height
-                'center', // gravity
-                90, // quality
+                fileId
             );
-            console.log("Generated preview URL:", previewUrl);
-            return previewUrl;
         } catch (error) {
             console.error("Error generating file preview:", error);
             return null;
