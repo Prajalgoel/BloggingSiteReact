@@ -33,7 +33,7 @@ function Signup() {
 
     return (
         <div className='flex items-center justify-center py-12'>
-            <div className={`mx-auto w-full max-w-lg bg-white/80 backdrop-blur-md rounded-2xl p-8 border border-white/20 shadow-2xl`}>
+            <div className={`mx-auto w-full max-w-lg bg-white/90 dark:bg-gray-800/90 backdrop-blur-md rounded-2xl p-8 border border-white/30 dark:border-gray-700/50 shadow-2xl transition-colors duration-300`}>
                 <div className="mb-6 flex justify-center">
                     <span className="inline-block w-full max-w-[100px]">
                         <Logo width="100%" />
@@ -41,12 +41,12 @@ function Signup() {
                 </div>
 
                 <div className="text-center mb-8">
-                    <h2 className="text-3xl font-bold text-gray-900 mb-2">Create Account</h2>
-                    <p className='text-gray-600'>
+                    <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">Create Account</h2>
+                    <p className='text-gray-600 dark:text-gray-300'>
                         Already have an account?&nbsp;
                         <Link 
                         to= "/login"
-                        className='font-semibold text-indigo-600 hover:text-indigo-700 transition-colors duration-200'
+                        className='font-semibold text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-300 transition-colors duration-200'
                         >
                             Sign In
                         </Link>
@@ -54,7 +54,7 @@ function Signup() {
                 </div>
 
                 {error && (
-                    <div className='bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg mb-6 text-center'>
+                    <div className='bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 text-red-700 dark:text-red-400 px-4 py-3 rounded-lg mb-6 text-center'>
                         {error}
                     </div>
                 )}
@@ -98,7 +98,7 @@ function Signup() {
                 </form>
 
                 <div className="mt-6 text-center">
-                    <p className="text-sm text-gray-500">
+                    <p className="text-sm text-gray-500 dark:text-gray-400">
                         By creating an account, you agree to our Terms of Service and Privacy Policy
                     </p>
                 </div>

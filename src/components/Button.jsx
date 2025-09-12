@@ -11,7 +11,7 @@ function Button({
   return (
     <button 
     type={type}
-    className= {`${className} ${bgColor} ${textColor} px-6 py-3 rounded-lg font-medium transition-all duration-200 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 shadow-lg hover:shadow-xl`}
+    className= {`${className} ${bgColor} ${textColor} px-6 py-3 rounded-lg font-medium transition-all duration-200 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800 shadow-lg hover:shadow-xl`}
     {...props}
     >
         {children} 

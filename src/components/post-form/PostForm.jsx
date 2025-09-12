@@ -77,7 +77,7 @@ export default function PostForm({ post }) {
     }, [watch, slugTransform, setValue]);
 
     return (
-        <form onSubmit={handleSubmit(submit)} className="flex flex-wrap">
+        <form onSubmit={handleSubmit(submit)} className="flex flex-wrap bg-white dark:bg-gray-800 p-6 rounded-lg border border-gray-300 dark:border-gray-600">
             <div className="w-2/3 px-2">
                 <Input
                     label="Title :"
@@ -109,7 +109,7 @@ export default function PostForm({ post }) {
                         <img
                             src={appwriteService.getFilePreview(post.featuredImage)}
                             alt={post.title}
-                            className="rounded-lg"
+                            className="rounded-lg border border-gray-300 dark:border-gray-600"
                         />
                     </div>
                 )}
@@ -122,7 +122,7 @@ export default function PostForm({ post }) {
                 <Button 
                     type="submit" 
                     bgColor={post ? "bg-green-500" : undefined} 
-                    className="w-full"
+                    className={`w-full ${post ? "hover:bg-green-600" : "hover:bg-blue-600"}`}
                 >
                     {post ? "Update" : "Submit"}
                 </Button>

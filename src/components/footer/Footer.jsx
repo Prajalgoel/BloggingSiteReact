@@ -13,11 +13,11 @@ function Footer() {
                                 <Logo width="100px" />
                             </div>
                             <div>
-                                <p className="text-sm text-gray-400 leading-relaxed">
+                                <p className="text-sm text-gray-300 dark:text-gray-400 leading-relaxed">
                                     Creating beautiful content experiences with modern technology. 
                                     Share your thoughts with the world.
                                 </p>
-                                <p className="text-xs text-gray-500 mt-4">
+                                <p className="text-xs text-gray-400 dark:text-gray-500 mt-4">
                                     &copy; Copyright 2024. All Rights Reserved.
                                 </p>
                             </div>
@@ -25,13 +25,13 @@ function Footer() {
                     </div>
                     <div className="w-full p-6 md:w-1/2 lg:w-2/12">
                         <div className="h-full">
-                            <h3 className="tracking-wider mb-6 text-sm font-semibold uppercase text-indigo-400">
+                            <h3 className="tracking-wider mb-6 text-sm font-semibold uppercase text-indigo-300 dark:text-indigo-400">
                                 Platform
                             </h3>
                             <ul className="space-y-3">
                                 <li>
                                     <Link
-                                        className="text-base font-medium text-gray-300 hover:text-indigo-400 transition-colors duration-200"
+                                        className="text-base font-medium text-gray-200 dark:text-gray-300 hover:text-indigo-300 dark:hover:text-indigo-400 transition-colors duration-200"
                                         to="/"
                                     >
                                         Features
@@ -39,7 +39,7 @@ function Footer() {
                                 </li>
                                 <li>
                                     <Link
-                                        className="text-base font-medium text-gray-300 hover:text-indigo-400 transition-colors duration-200"
+                                        className="text-base font-medium text-gray-200 dark:text-gray-300 hover:text-indigo-300 dark:hover:text-indigo-400 transition-colors duration-200"
                                         to="/"
                                     >
                                         Pricing
@@ -47,7 +47,7 @@ function Footer() {
                                 </li>
                                 <li>
                                     <Link
-                                        className="text-base font-medium text-gray-300 hover:text-indigo-400 transition-colors duration-200"
+                                        className="text-base font-medium text-gray-200 dark:text-gray-300 hover:text-indigo-300 dark:hover:text-indigo-400 transition-colors duration-200"
                                         to="/"
                                     >
                                         Community
@@ -55,7 +55,7 @@ function Footer() {
                                 </li>
                                 <li>
                                     <Link
-                                        className="text-base font-medium text-gray-300 hover:text-indigo-400 transition-colors duration-200"
+                                        className="text-base font-medium text-gray-200 dark:text-gray-300 hover:text-indigo-300 dark:hover:text-indigo-400 transition-colors duration-200"
                                         to="/"
                                     >
                                         Resources
@@ -66,13 +66,13 @@ function Footer() {
                     </div>
                     <div className="w-full p-6 md:w-1/2 lg:w-2/12">
                         <div className="h-full">
-                            <h3 className="tracking-wider mb-6 text-sm font-semibold uppercase text-indigo-400">
+                            <h3 className="tracking-wider mb-6 text-sm font-semibold uppercase text-indigo-300 dark:text-indigo-400">
                                 Support
                             </h3>
                             <ul className="space-y-3">
                                 <li>
                                     <Link
-                                        className="text-base font-medium text-gray-300 hover:text-indigo-400 transition-colors duration-200"
+                                        className="text-base font-medium text-gray-200 dark:text-gray-300 hover:text-indigo-300 dark:hover:text-indigo-400 transition-colors duration-200"
                                         to="/"
                                     >
                                         Help Center
@@ -80,7 +80,7 @@ function Footer() {
                                 </li>
                                 <li>
                                     <Link
-                                        className="text-base font-medium text-gray-300 hover:text-indigo-400 transition-colors duration-200"
+                                        className="text-base font-medium text-gray-200 dark:text-gray-300 hover:text-indigo-300 dark:hover:text-indigo-400 transition-colors duration-200"
                                         to="/"
                                     >
                                         Contact Us
@@ -88,7 +88,7 @@ function Footer() {
                                 </li>
                                 <li>
                                     <Link
-                                        className="text-base font-medium text-gray-300 hover:text-indigo-400 transition-colors duration-200"
+                                        className="text-base font-medium text-gray-200 dark:text-gray-300 hover:text-indigo-300 dark:hover:text-indigo-400 transition-colors duration-200"
                                         to="/"
                                     >
                                         Status
@@ -96,7 +96,7 @@ function Footer() {
                                 </li>
                                 <li>
                                     <Link
-                                        className="text-base font-medium text-gray-300 hover:text-indigo-400 transition-colors duration-200"
+                                        className="text-base font-medium text-gray-200 dark:text-gray-300 hover:text-indigo-300 dark:hover:text-indigo-400 transition-colors duration-200"
                                         to="/"
                                     >
                                         API Docs
@@ -107,13 +107,13 @@ function Footer() {
                     </div>
                     <div className="w-full p-6 md:w-1/2 lg:w-3/12">
                         <div className="h-full">
-                            <h3 className="tracking-wider mb-6 text-sm font-semibold uppercase text-indigo-400">
+                            <h3 className="tracking-wider mb-6 text-sm font-semibold uppercase text-indigo-300 dark:text-indigo-400">
                                 Legal
                             </h3>
                             <ul className="space-y-3">
                                 <li>
                                     <Link
-                                        className="text-base font-medium text-gray-300 hover:text-indigo-400 transition-colors duration-200"
+                                        className="text-base font-medium text-gray-200 dark:text-gray-300 hover:text-indigo-300 dark:hover:text-indigo-400 transition-colors duration-200"
                                         to="/"
                                     >
                                         Terms of Service
@@ -121,7 +121,7 @@ function Footer() {
                                 </li>
                                 <li>
                                     <Link
-                                        className="text-base font-medium text-gray-300 hover:text-indigo-400 transition-colors duration-200"
+                                        className="text-base font-medium text-gray-200 dark:text-gray-300 hover:text-indigo-300 dark:hover:text-indigo-400 transition-colors duration-200"
                                         to="/"
                                     >
                                         Privacy Policy
@@ -129,7 +129,7 @@ function Footer() {
                                 </li>
                                 <li>
                                     <Link
-                                        className="text-base font-medium text-gray-300 hover:text-indigo-400 transition-colors duration-200"
+                                        className="text-base font-medium text-gray-200 dark:text-gray-300 hover:text-indigo-300 dark:hover:text-indigo-400 transition-colors duration-200"
                                         to="/"
                                     >
                                         License
